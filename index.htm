@@ -8,17 +8,12 @@
 	<title>HL7 C-CDA Viewer (Intelsoft)</title>
 
 	<script src="js/jquery-1.12.0.min.js"></script>	
-	<!--
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	<script>window.jQuery || document.write('&lt;script src="js/jquery-1.12.0.min.js">\x3C/script>')</script>
-	-->
 	<script src="js/core.js"></script>
     		
-			<!--<link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.css" />-->
 			<link rel="stylesheet" type="text/css" media="all" href="css/cda.css" />
 			<link rel="stylesheet" type="text/css" media="all" href="css/pure-min.css" />
 
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/pureextension.css">
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="css/marketing-old-ie.css">
@@ -30,10 +25,6 @@
 
 	<script src="js/packery.pkgd.min.js"></script>
 	<script src="js/draggabilly.pkgd.min.js"></script>
-	<!--
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/masonry.pkgd.min.js">\x3C/script>')</script>
-	-->
 	
 	<script src="js/xslt/xslt.js"></script>
 	<script src="js/core.js"></script>
@@ -42,10 +33,10 @@
 </head>
 <body>
 <!--[if lte IE 8]>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+    <link rel="stylesheet" href="css/grids-responsive-old-ie-min.css">
 <![endif]-->
 <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="css/grids-responsive-min.css">
 <!--<![endif]-->
 
 	<div class="custom-wrapper pure-g home-menu pure-menu pure-menu-fixed" style="width:100%" id="men">
@@ -68,7 +59,7 @@
 						Github Username <input id="ghowner" placeholder="Github Username" value="C-CDA" type="text" />
 											<div id="github"></div>
 						<p id="transform" class="pure-button transform">View <i class="fa fa-angle-double-right"></i></p>
-						<p style="">Paste your C-CDA document below<p>
+						<p style="">Paste your C-CDA document below
 					</div>
 					<textarea id="cdaxml" style="width:95%;height:20em;padding:0.25em;"
 placeholder="Your C-CDA document goes here:
