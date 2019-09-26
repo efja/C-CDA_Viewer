@@ -189,9 +189,14 @@ function Transformation() {
 
 						var source = new ActiveXObject("Msxml2.DOMDocument.3.0");
 						source.async = false;
-						source.load(xml);
+						//This only succeeds on files (i.e., when xml is passed in as a filename).
+						var success = source.load(xml);
+						if (!success) {
+							//xml is the textarea contents.
+							source.loadXML(xml);
+						}
 						var stylesheet = new ActiveXObject("Msxml2.DOMDocument.3.0");
-						stylesheet.async = false
+						stylesheet.async = false;
 						stylesheet.load("cda.xsl");
                         //callback(t);
 						document.getElementById(target).innerHTML = source.transformNode(stylesheet)
